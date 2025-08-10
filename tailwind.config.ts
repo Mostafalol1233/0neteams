@@ -64,7 +64,8 @@ export default {
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
-        arabic: ["Cairo", "Noto Sans Arabic", "Almarai", "sans-serif"],
+        arabic: ["Noto Naskh Arabic", "Cairo", "serif"],
+        rakkas: ["Rakkas", "serif"],
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
