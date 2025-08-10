@@ -10,9 +10,9 @@
 
 ## الطريقة الثانية: رفع الملفات مباشرة
 
-1. **قم ببناء المشروع:**
+1. **قم ببناء المشروع بطريقة نظيفة:**
    ```bash
-   npm run build
+   ./build-clean.sh
    ```
 
 2. **اذهب إلى [Vercel Dashboard](https://vercel.com/dashboard)**
@@ -42,14 +42,14 @@
 
 ## إعدادات مهمة
 
-- ✅ **Build Command:** `npm run build`
+- ✅ **Build Command:** `./build-clean.sh`
 - ✅ **Output Directory:** `dist/public`  
 - ✅ **Node.js Version:** 18.x أو أحدث
 
 ## إذا واجهت شاشة بيضاء
 
 1. **في إعدادات Vercel، تأكد من:**
-   - Build Command: `npm run build`
+   - Build Command: `./build-clean.sh`
    - Output Directory: `dist/public`
    - Install Command: `npm install`
 
@@ -68,6 +68,26 @@
 - **Documentation:** https://vercel.com/docs
 - **Support:** https://vercel.com/support
 
+## حل مشكلة سكريپت Replit في المتصفح
+
+إذا رأيت سكريپت Replit في الكونسول:
+
+1. **استخدم البناء النظيف دائماً:**
+   ```bash
+   ./build-clean.sh
+   ```
+
+2. **هذا السكريپت يقوم بـ:**
+   - حذف البناء السابق
+   - استخدام ملف HTML خاص بالإنتاج (بدون سكريپت Replit)
+   - بناء نظيف تماماً
+
+3. **تأكد من أن ملف `dist/public/index.html` لا يحتوي على سكريپت Replit**
+
+4. **في Vercel، استخدم:**
+   - Build Command: `./build-clean.sh`
+   - Output Directory: `dist/public`
+
 ---
 
-**المشروع جاهز للنشر بدون أي مشاكل! 🎉**
+**المشروع محسّن للنشر بدون سكريپت Replit! 🎉**
