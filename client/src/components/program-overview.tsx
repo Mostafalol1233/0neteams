@@ -4,8 +4,11 @@ export function ProgramOverview() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-16 bg-muted transition-colors duration-500" data-testid="program-overview">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-muted transition-colors duration-500 relative overflow-hidden" data-testid="program-overview">
+      {/* Retro Grid Overlay */}
+      <div className="absolute bottom-0 w-full h-32 retro-grid opacity-20"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold gradient-text mb-4" data-testid="overview-title">
             {t('overviewTitle')}

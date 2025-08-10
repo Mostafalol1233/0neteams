@@ -15,7 +15,7 @@ export function ProgramBenefits() {
   return (
     <section className="py-16 hero-bg relative overflow-hidden transition-colors duration-500" data-testid="program-benefits">
       {/* Retro Grid Overlay */}
-      <div className="absolute bottom-0 w-full h-32 retro-grid opacity-30"></div>
+      <div className="absolute bottom-0 w-full h-40 retro-grid opacity-30"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-4xl font-bold text-center gradient-text mb-12" data-testid="benefits-title">

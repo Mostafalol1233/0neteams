@@ -4,8 +4,11 @@ export function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-gray-900 dark:bg-black text-white py-12 transition-colors duration-500" data-testid="footer">
-      <div className="container mx-auto px-4 text-center">
+    <footer className="bg-gray-900 dark:bg-black text-white py-12 transition-colors duration-500 relative overflow-hidden" data-testid="footer">
+      {/* Retro Grid Overlay */}
+      <div className="absolute top-0 w-full h-20 retro-grid opacity-20"></div>
+      
+      <div className="container mx-auto px-4 text-center relative z-10">
         <div className="mb-8">
           <h3 className="text-3xl font-bold gradient-text mb-4" data-testid="footer-logo">ONE TEAM</h3>
           <p className="text-gray-400 mb-6" data-testid="footer-description">

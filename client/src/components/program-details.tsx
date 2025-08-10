@@ -6,7 +6,7 @@ export function ProgramDetails() {
   return (
     <section className="py-16 hero-bg relative overflow-hidden transition-colors duration-500" data-testid="program-details">
       {/* Retro Grid Overlay */}
-      <div className="absolute bottom-0 w-full h-32 retro-grid opacity-30"></div>
+      <div className="absolute bottom-0 w-full h-40 retro-grid opacity-30"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
