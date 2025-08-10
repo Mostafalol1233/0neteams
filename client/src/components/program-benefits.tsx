@@ -13,8 +13,11 @@ export function ProgramBenefits() {
   ];
 
   return (
-    <section className="py-16 bg-background transition-colors duration-500" data-testid="program-benefits">
-      <div className="container mx-auto px-4">
+    <section className="py-16 hero-bg relative overflow-hidden transition-colors duration-500" data-testid="program-benefits">
+      {/* Retro Grid Overlay */}
+      <div className="absolute bottom-0 w-full h-32 retro-grid opacity-30"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-4xl font-bold text-center gradient-text mb-12" data-testid="benefits-title">
           {t('benefitsTitle')}
         </h2>
@@ -30,10 +33,10 @@ export function ProgramBenefits() {
                 {benefit.emoji}
               </div>
               <div>
-                <h3 className="font-semibold text-contrast mb-2" data-testid={`${benefit.key}-title`}>
+                <h3 className="font-semibold text-white mb-2" data-testid={`${benefit.key}-title`}>
                   {t(`${benefit.key}Title` as any)}
                 </h3>
-                <p className="text-sm text-muted-foreground" data-testid={`${benefit.key}-description`}>
+                <p className="text-sm text-gray-200" data-testid={`${benefit.key}-description`}>
                   {t(`${benefit.key}Desc` as any)}
                 </p>
               </div>
