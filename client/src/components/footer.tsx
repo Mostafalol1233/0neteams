@@ -39,8 +39,19 @@ export function Footer() {
         </div>
         
         <div className="border-t border-gray-800 pt-8">
-          <p className="text-gray-400" data-testid="copyright">
+          <p className="text-gray-400 mb-2" data-testid="copyright">
             {t('copyright')}
+          </p>
+          <p className="text-gray-500 text-sm" data-testid="developer-credit">
+            Created by{' '}
+            <a 
+              href="https://linktr.ee/mustafa_bemo" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-secondary hover:text-secondary/80 transition-colors underline decoration-dotted"
+            >
+              Mustafa
+            </a>
           </p>
         </div>
       </div>
