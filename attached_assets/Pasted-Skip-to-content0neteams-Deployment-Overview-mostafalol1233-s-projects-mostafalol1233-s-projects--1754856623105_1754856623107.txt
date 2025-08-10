@@ -1,0 +1,108 @@
+Skip to content0neteams – Deployment Overview
+mostafalol1233's projects
+mostafalol1233's projects
+
+Hobby
+
+0neteams
+
+DzaqqbNbS
+
+
+Find…
+F
+
+Deployment Details
+Created
+mostafalol1233 Avatar
+mostafalol1233
+3m ago
+Status
+Ready
+Latest
+Time to Ready
+20s
+3m ago
+Environment
+Production
+Current
+Domains
+0neteams.vercel.app
++1
+0neteams-git-main-mostafalol1233s-projects.vercel.app
+0neteams-h4dy4h37o-mostafalol1233s-projects.vercel.app
+Source
+main
+240fd73
+Improve deployment by using a clean build script and separate production HTML
+
+Deployment Configuration
+Fluid Compute
+Deployment Protection
+Skew Protection
+Build Logs
+52s
+
+All Logs (47)
+
+Errors (0)
+
+Warnings (3)
+Find in logs
+CtrlF
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Cloning github.com/Mostafalol1233/0neteams (Branch: main, Commit: 240fd73)
+Previous build caches not available
+Cloning completed: 719.000ms
+Found .vercelignore
+Removed 0 ignored files defined in .vercelignore
+Running "vercel build"
+Vercel CLI 44.7.3
+WARN! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+Installing dependencies...
+npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+added 481 packages in 9s
+64 packages are looking for funding
+  run `npm fund` for details
+Running "npm run build"
+> rest-express@1.0.0 build
+> vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+Deployment Summary
+Assigning Custom Domains
+Runtime Logs
+
+View and debug runtime logs & errors
+
+Observability
+
+Monitor app health & performance
+
+Web Analytics
+
+Not Enabled
+Analyze visitors & traffic in real-time
+
+Speed Insights
+
+Not Enabled
+Performance metrics from real users
+
+Home
+Docs
+Guides
+Help
+Contact
+Loading status…
+
+Select a display theme:
+
+system
+
+light
+
+dark
+© 2025, Vercel Inc.
+
+9
