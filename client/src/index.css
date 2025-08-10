@@ -100,9 +100,11 @@
 @layer utilities {
   .gradient-text {
     background: linear-gradient(135deg, var(--secondary), var(--primary), var(--accent));
+    background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    animation: gradientShift 8s ease-in-out infinite;
   }
 
   .glass-card {
@@ -154,5 +156,54 @@
 
   .animate-glow {
     animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  /* Performance optimizations for mobile */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-float,
+    .animate-glow,
+    .animate-bounce-gentle,
+    .animate-pulse-slow,
+    .animate-gradient-shift {
+      animation: none !important;
+    }
+    
+    .hover\:scale-105:hover,
+    .hover\:scale-110:hover,
+    .hover\:scale-125:hover {
+      transform: none !important;
+    }
+  }
+
+  /* Optimize animations for low-end devices */
+  @media (max-width: 768px) {
+    .animate-slide-up,
+    .animate-slide-in-left,
+    .animate-slide-in-right,
+    .animate-fade-in,
+    .animate-scale-in {
+      animation-duration: 0.3s !important;
+    }
+    
+    .hover\:rotate-12:hover,
+    .hover\:-rotate-12:hover {
+      transform: none !important;
+    }
+  }
+
+  /* Hardware acceleration for smooth animations */
+  .animate-float,
+  .animate-glow,
+  .animate-bounce-gentle,
+  .animate-pulse-slow,
+  .animate-slide-up,
+  .animate-slide-in-left,
+  .animate-slide-in-right,
+  .animate-fade-in,
+  .animate-scale-in,
+  .glass-card {
+    will-change: transform, opacity;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
   }
 }

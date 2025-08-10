@@ -10,18 +10,18 @@ export function ProgramOverview() {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold gradient-text mb-4" data-testid="overview-title">
+          <h2 className="text-4xl font-bold gradient-text mb-4 animate-fade-in" data-testid="overview-title">
             {t('overviewTitle')}
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="overview-description">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-slide-up" data-testid="overview-description">
             {t('overviewDesc')}
           </p>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">
           {/* Sessions Card */}
-          <div className="glass-card rounded-2xl p-8 hover:scale-105 transition-transform duration-300" data-testid="sessions-card">
-            <div className="text-4xl mb-4">🔥</div>
+          <div className="glass-card rounded-2xl p-8 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 animate-slide-in-left" data-testid="sessions-card">
+            <div className="text-4xl mb-4 animate-bounce-gentle">🔥</div>
             <h3 className="text-2xl font-bold text-contrast mb-4" data-testid="sessions-title">
               {t('sessionsTitle')}
             </h3>
@@ -31,8 +31,8 @@ export function ProgramOverview() {
           </div>
           
           {/* Skills Card */}
-          <div className="glass-card rounded-2xl p-8 hover:scale-105 transition-transform duration-300" data-testid="skills-card">
-            <div className="text-4xl mb-4">🚀</div>
+          <div className="glass-card rounded-2xl p-8 hover:scale-105 hover:shadow-2xl hover:shadow-secondary/20 transition-all duration-300 animate-slide-up" style={{animationDelay: '0.2s'}} data-testid="skills-card">
+            <div className="text-4xl mb-4 animate-bounce-gentle" style={{animationDelay: '0.5s'}}>🚀</div>
             <h3 className="text-2xl font-bold text-contrast mb-4" data-testid="skills-title">
               {t('skillsTitle')}
             </h3>
@@ -42,8 +42,8 @@ export function ProgramOverview() {
           </div>
           
           {/* Practical Card */}
-          <div className="glass-card rounded-2xl p-8 hover:scale-105 transition-transform duration-300" data-testid="practical-card">
-            <div className="text-4xl mb-4">💡</div>
+          <div className="glass-card rounded-2xl p-8 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20 transition-all duration-300 animate-slide-in-right" style={{animationDelay: '0.4s'}} data-testid="practical-card">
+            <div className="text-4xl mb-4 animate-bounce-gentle" style={{animationDelay: '1s'}}>💡</div>
             <h3 className="text-2xl font-bold text-contrast mb-4" data-testid="practical-title">
               {t('practicalTitle')}
             </h3>

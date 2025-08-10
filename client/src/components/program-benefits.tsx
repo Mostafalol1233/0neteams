@@ -18,20 +18,21 @@ export function ProgramBenefits() {
       <div className="absolute bottom-0 w-full h-40 retro-grid opacity-30"></div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-4xl font-bold text-center gradient-text mb-12" data-testid="benefits-title">
+        <h2 className="text-4xl font-bold text-center gradient-text mb-12 animate-fade-in" data-testid="benefits-title">
           {t('benefitsTitle')}
         </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {benefits.map((benefit) => (
+          {benefits.map((benefit, index) => (
             <div 
               key={benefit.key}
-              className={`flex items-start p-6 rounded-xl glass-card hover:scale-105 transition-transform duration-300 ${
+              className={`flex items-start p-6 rounded-xl glass-card hover:scale-105 hover:shadow-2xl hover:shadow-secondary/20 transition-all duration-300 animate-slide-up ${
                 language === 'ar' ? 'flex-row-reverse space-x-reverse space-x-4' : 'space-x-4'
               }`}
+              style={{animationDelay: `${index * 0.1}s`}}
               data-testid={`benefit-card-${benefit.emoji}`}
             >
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-r from-secondary to-accent flex items-center justify-center text-white font-bold">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-r from-secondary to-accent flex items-center justify-center text-white font-bold animate-bounce-gentle hover:animate-pulse transition-all duration-300">
                 {benefit.emoji}
               </div>
               <div>
