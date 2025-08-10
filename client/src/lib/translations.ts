@@ -55,8 +55,8 @@ export const translations = {
     langToggle: 'English',
     
     // Hero Section
-    heroTitle: 'ون تيم',
-    heroSubtitle: 'برنامج إتقان المهارات الناعمة',
+    heroTitle: 'ONE TEAM',
+    heroSubtitle: 'Soft Skills Mastery Program',
     ctaButton: 'سجل الآن',
     
     // Program Overview

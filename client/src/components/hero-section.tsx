@@ -1,5 +1,6 @@
 import { StarField } from './star-field';
 import { useLanguage } from './language-provider';
+import logoImage from '@assets/image_1754853770155.png';
 
 export function HeroSection() {
   const { t } = useLanguage();
@@ -17,7 +18,11 @@ export function HeroSection() {
           {/* Logo Area */}
           <div className="mb-8 animate-float">
             <div className="inline-flex items-center justify-center w-32 h-32 rounded-full glass-card mb-6" data-testid="logo-circle">
-              <div className="text-6xl gradient-text font-bold">OT</div>
+              <img 
+                src={logoImage} 
+                alt="ONE TEAM Logo" 
+                className="w-24 h-24 object-contain rounded-full"
+              />
             </div>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-4" data-testid="hero-title">
               {t('heroTitle')}
