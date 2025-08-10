@@ -1,4 +1,5 @@
 import { useLanguage } from './language-provider';
+import logoImage from '@assets/image_1754857732200.png';
 
 export function Navigation() {
   const { toggleLanguage, t } = useLanguage();
@@ -8,7 +9,14 @@ export function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
-            <div className="text-2xl font-bold gradient-text" data-testid="logo">ONE TEAM</div>
+            <div className="flex items-center space-x-2" data-testid="logo">
+              <img 
+                src={logoImage} 
+                alt="ONE TEAM Logo" 
+                className="w-10 h-10 object-contain rounded-full"
+              />
+              <div className="text-2xl font-bold gradient-text">ONE TEAM</div>
+            </div>
           </div>
           
           <div className="flex items-center space-x-4">
