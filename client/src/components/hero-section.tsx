@@ -1,6 +1,6 @@
 import { StarField } from './star-field';
 import { useLanguage } from './language-provider';
-import logoImage from '@assets/image_1754853770155.png';
+import logoImage from '@assets/image_1754857732200.png';
 
 export function HeroSection() {
   const { t } = useLanguage();
