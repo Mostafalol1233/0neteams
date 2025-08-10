@@ -46,6 +46,15 @@
 - ✅ **Output Directory:** `dist/public`  
 - ✅ **Node.js Version:** 18.x أو أحدث
 
+## إذا واجهت شاشة بيضاء
+
+1. **في إعدادات Vercel، تأكد من:**
+   - Build Command: `npm run build`
+   - Output Directory: `dist/public`
+   - Install Command: `npm install`
+
+2. **أو قم برفع مجلد `dist/public` مباشرة**
+
 ## ما يحدث تلقائياً
 
 - 🚀 Vercel سيبني المشروع تلقائياً

@@ -4,6 +4,14 @@
 
 ONE TEAM is a comprehensive soft skills mastery program designed to empower individuals through practical training in essential life and work skills. The project is a modern web application featuring a landing page for a 7-session intensive program that covers communication, leadership, time management, and professional development. The application supports both English and Arabic languages with automatic dark/light theme switching based on time of day.
 
+**Recent Updates (August 10, 2025):**
+- Implemented cyberpunk-style design with retro grid backgrounds
+- Added ONE TEAM logo from provided assets
+- Ensured "ONE TEAM" and "Soft Skills Mastery Program" remain in English across all languages
+- Applied purple gradient backgrounds to program sections
+- Optimized for Vercel deployment with proper build configuration
+- Removed Replit-specific scripts for clean production deployment
+
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
