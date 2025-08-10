@@ -27,22 +27,18 @@ export function ProgramBenefits() {
             <div 
               key={benefit.key}
               className={`flex items-start p-6 rounded-xl glass-card hover:scale-105 transition-transform duration-300 ${
-                language === 'ar' ? 'space-x-reverse space-x-4' : 'space-x-4'
+                language === 'ar' ? 'flex-row-reverse space-x-reverse space-x-4' : 'space-x-4'
               }`}
               data-testid={`benefit-card-${benefit.emoji}`}
             >
               <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-r from-secondary to-accent flex items-center justify-center text-white font-bold">
                 {benefit.emoji}
               </div>
-              <div className={language === 'ar' ? 'text-right' : ''}>
-                <h3 className={`font-semibold text-white mb-2 ${
-                  language === 'ar' ? 'font-rakkas text-lg' : ''
-                }`} data-testid={`${benefit.key}-title`}>
+              <div>
+                <h3 className="font-semibold text-white mb-2" data-testid={`${benefit.key}-title`}>
                   {t(`${benefit.key}Title` as any)}
                 </h3>
-                <p className={`text-sm text-gray-200 ${
-                  language === 'ar' ? 'font-arabic leading-relaxed' : ''
-                }`} data-testid={`${benefit.key}-description`}>
+                <p className="text-sm text-gray-200" data-testid={`${benefit.key}-description`}>
                   {t(`${benefit.key}Desc` as any)}
                 </p>
               </div>
